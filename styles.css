@@ -4,7 +4,28 @@
 }
 
 main {
-  padding-left: 10px;
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h3 {
+  align-self: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#allBooks {
+  border: 2px solid #111111;
+  margin-top: 30px;
+  width: 60%;
 }
 
 .book-store {
@@ -12,15 +33,49 @@ main {
   flex-direction: column;
   margin-top: 10px;
   gap: 10px;
+  padding: 4px;
 }
 
 button {
-  width: fit-content;
   padding: 4px;
+  align-self: flex-end;
+  border: 2px solid #111111;
+  background-color: #fff;
+  box-shadow: 4px 3px 1px 0px rgb(23, 22, 22);
+  font-size: 15px;
+  font-weight: 700;
+}
+button:hover {
+  box-shadow: 4px 3px 1px 0px red;
 }
 
 .addBook {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 50px;
 }
+
+input {
+ border: 3px solid black;
+ padding: 5px;
+}
+
+tbody tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+tbody tr td {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+tbody tr td span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+tbody:nth-child(odd) {  
+  background-color: #DFFF00;  
+}  

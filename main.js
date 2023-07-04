@@ -46,6 +46,3 @@ document.getElementById('allBooks').addEventListener('click', (event) => {
 });
 
 reciveData();
-
-
- 

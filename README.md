@@ -56,7 +56,7 @@ A Awesome Book  is a live book store where anyone can add and remove the books.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://anshuman7negi.github.io/Awesome-Book/)
+- [Live Demo Link]( https://riskmaris.github.io/Awesome-Books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +113,9 @@ Deploy this project on any web server
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Anshuman Singh Negi **
-
+    **Maris Kapuka**
+- GitHub: [@githubhandle](https://github.com/riskmaris)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/riskmaris)
 - GitHub: [@githubhandle](https://github.com/anshuman7negi)
 - Twitter: [@twitterhandle](https://twitter.com/AnshumanNegi108)
 - LinkedIn: [@LinkedIn](https://www.linkedin.com/in/anshuman-singh-negi-33779a224/)

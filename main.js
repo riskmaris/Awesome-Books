@@ -1,9 +1,6 @@
-
-
 class BookLibrary {
   constructor() {
     this.bookDetails = [];
-
   }
 
   displayBook() {
@@ -13,6 +10,7 @@ class BookLibrary {
       const bookStore = document.getElementById('allBooks');
       bookStore.innerHTML = '';
       for (let i = 0; i < this.bookDetails.length; i += 1) {
+
         bookStore.innerHTML += 
         `<tbody id="book${i}" class="book-store">
           <tr> 
@@ -23,6 +21,7 @@ class BookLibrary {
       }
     }
   }
+
   addBook(title, author) {
     this.bookDetails.push({ title, author });
     localStorage.setItem('booksData', JSON.stringify(this.bookDetails));
@@ -34,8 +33,6 @@ class BookLibrary {
     localStorage.setItem('booksData', JSON.stringify(this.bookDetails));
     this.displayBook();
   }
-
-
 }
 
 const book = new BookLibrary();
@@ -59,4 +56,3 @@ document.getElementById('allBooks').addEventListener('click', (event) => {
     book.removeBook(index);
   }
 });
-

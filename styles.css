@@ -16,6 +16,7 @@ main {
 }
 
 h1 {
+  display: none;
   font-weight: 600;
 }
 
@@ -27,6 +28,9 @@ h3 {
 }
 
 #allBooks {
+  display: none;
+  flex-direction: column;
+  padding: 4px;
   border: 2px solid #111111;
   margin-top: 30px;
   width: 60%;
@@ -34,10 +38,10 @@ h3 {
 
 .book-store {
   display: flex;
-  flex-direction: column;
   margin-top: 10px;
   gap: 10px;
   padding: 4px;
+  justify-content: space-between;
 }
 
 button {
@@ -57,17 +61,12 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
+  width: 50%;
 }
 
 input {
  border: 3px solid black;
  padding: 5px;
-}
-
-tbody tr {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 tbody tr td {
@@ -80,6 +79,6 @@ tbody tr td span {
   padding-right: 5px;
 }
 
-tbody:nth-child(odd) {  
+tbody tr:nth-child(odd) {  
   background-color: #DFFF00;  
 }  

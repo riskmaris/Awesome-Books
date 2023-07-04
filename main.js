@@ -29,7 +29,11 @@ class BookLibrary {
     this.displayBook();
   }
 
-
+  removeBook(index){
+    this.bookDetails.splice(index, 1);
+    localStorage.setItem('booksData',JSON.stringify(this.bookDetails));
+    this.displayBook();
+  }
 
 
 }
@@ -48,5 +52,12 @@ document.getElementById('addBook').addEventListener('click', () => {
   }
 });
 
-
+document.getElementById('allBooks').addEventListener('click', (event) => {
+  if (event.target.classList.contains('remove-button')) {
+    const bookDiv = event.target.parentNode;
+    console.log(bookDiv.parentNode.children)
+    const index = Array.from(bookDiv.parentNode.children).indexOf(bookDiv);
+    book.removeBook(index);
+  }
+});
 

@@ -1,48 +1,68 @@
-let bookDetails = [];
+class BookLibrary {
+  constructor() {
+    const previousData = localStorage.getItem('booksData');
+    this.bookDetails = previousData ? JSON.parse(previousData) : [];
+  }
 
-function reciveData() {
-  const reciveBooks = localStorage.getItem('booksData');
-  if (reciveBooks) {
-    bookDetails = JSON.parse(reciveBooks);
-    const bookStore = document.getElementById('allBooks');
-    bookStore.innerHTML = '';
-    for (let i = 0; i < bookDetails.length; i += 1) {
-      bookStore.innerHTML += `<div id="book${i}" class="book-store">
-                                     <p>${bookDetails[i].book}</p>
-                                     <p>${bookDetails[i].author}</p>
-                                     <button  class="remove-button">remove</button>
-                                     <hr>
-                                     </div>`;
+  displayBook() {
+    const reciveBooks = localStorage.getItem('booksData');
+    const allBooksTable = document.getElementById('allBooks');
+    const tableTitle = document.getElementById('table-title');
+
+    if (reciveBooks && JSON.parse(reciveBooks).length > 0) {
+      this.bookDetails = JSON.parse(reciveBooks);
+      const bookStore = document.getElementById('bookStore');
+      bookStore.innerHTML = '';
+      for (let i = 0; i < this.bookDetails.length; i += 1) {
+        const bookRow = document.createElement('tr');
+        bookRow.id = `book${i}`;
+        bookRow.className = 'book-store';
+        bookRow.innerHTML = `
+          <td>"${this.bookDetails[i].title}" <span>by</span> ${this.bookDetails[i].author}</td>
+          <td><button class="remove-button">Remove</button></td>
+        `;
+        bookStore.appendChild(bookRow);
+      }
+      allBooksTable.style.display = 'flex';
+      tableTitle.style.display = 'block';
+    } else {
+      allBooksTable.style.display = 'none';
+      tableTitle.style.display = 'none';
     }
   }
-}
-function storeData() {
-  localStorage.setItem('booksData', JSON.stringify(bookDetails));
-  reciveData();
+
+  addBook(title, author) {
+    this.bookDetails.push({ title, author });
+    localStorage.setItem('booksData', JSON.stringify(this.bookDetails));
+    this.displayBook();
+  }
+
+  removeBook(index) {
+    this.bookDetails.splice(index, 1);
+    localStorage.setItem('booksData', JSON.stringify(this.bookDetails));
+    this.displayBook();
+  }
 }
 
-function removeBook(index) {
-  bookDetails.splice(index, 1);
-  storeData();
-}
+const book = new BookLibrary();
 
-document.getElementById('addBook').addEventListener('click', () => {
-  const book = document.getElementById('title').value;
+book.displayBook();
+
+document.getElementById('addBook').addEventListener('click', (event) => {
+  event.preventDefault(); // Prevent form submission
+  const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
-  if (book !== '' && author !== '') {
-    bookDetails.push({ book, author });
-    storeData();
+  if (title !== '' && author !== '') {
+    book.addBook(title, author);
     document.getElementById('title').value = '';
     document.getElementById('author').value = '';
   }
 });
 
-document.getElementById('allBooks').addEventListener('click', (event) => {
+document.getElementById('bookStore').addEventListener('click', (event) => {
   if (event.target.classList.contains('remove-button')) {
-    const bookDiv = event.target.parentNode;
-    const index = Array.from(bookDiv.parentNode.children).indexOf(bookDiv);
-    removeBook(index);
+    const bookRow = event.target.parentNode.parentNode;
+    const index = Array.from(bookRow.parentNode.children).indexOf(bookRow);
+    book.removeBook(index);
   }
 });
-
-reciveData();

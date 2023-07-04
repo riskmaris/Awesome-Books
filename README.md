@@ -1,4 +1,12 @@
-TABLE OF CONTENTS
+<a name="readme-top"></a>
+
+<div align="center">
+
+  <br/>
+
+  <h3><b>Awesome Book</b></h3>
+
+</div>
 
 # 📗 Table of Contents
 
@@ -13,133 +21,138 @@ TABLE OF CONTENTS
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
+# 📖 Awesome Book <a name="about-project"></a>
 
-# 📖 [Awesome Books] <a name=Awesome Books></a>
+A Awesome Book  is a live book store where anyone can add and remove the books.
 
+## 🛠 Built With <a name="built-with"></a>
 
-**[Awesome Books]** is a simple project built with html and css and javascript showing mobile and desktop version.
-
-## 🛠 Built With
-1. Html
-2. Css
-3. Javascript
-4. Linters
-
-## Tech Stack <a name="tech stack"></a>
+### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://html.org/">Html</a></li>
-    <li><a href="https://css.org/">Css</a></li>
+    <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML">html5</a></li>
+    <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS3</a></li>
+     <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">javaScript</a></li>
   </ul>
-</details>
-
-<details>
-  <summary>Database</summary>
-  No database technologies were used.
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- Added index.html file
-- Added style.css file
-- Added Javascript file
-- Added linters
-
-
+- **Responsive Design**
+- **Linters Error Free**
+- **Code Quality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 [Live Demo]  
+## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- GETTING STARTED -->
+- [Live Demo Link]( https://riskmaris.github.io/Awesome-Books/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
-```bash
-
+1. Go to this URL link: https://github.com/riskmaris/Awesome-Books.git
+2. clone the repo and start working on it.
 
 ### Prerequisites
 
 In order to run this project you need:
-- Web browser
-- Have visual studio code installed
-- Install node.js
-- Install git
-- You need to Go Live
+
+- You need to have NodeJS installed
+- A Web Browser (Google Chrome, Firefox, etc)
+- A Code Editor (Notepad++, VSCode, etc)
 
 ### Setup
 
 Clone this repository to your desired folder:
 
+```
+git clone your link repo https://github.com/riskmaris/Awesome-Books.git
+cd your folder name
+```
 
 ### Install
 
-Install this project with this command:
+Install this project with:
 
-```sh
-  cd my-project
-  npm install
+```
+npm install
 ```
 
 ### Usage
 
 To run the project, execute the following command:
 
-Open index.html using live server extension
+Double-click on the index file (index.html)
+
+### Run tests
+
+To run tests, run the following command:
+
+npx hint .
+
+### Deployment
+
+You can deploy this project using:
+
+Deploy this project on any web server
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contributions:
-- Please feel free to contribute to this website because am open for new changes and  skills that can make it even better.
+## 👥 Authors <a name="authors"></a>
 
-
-## 👥 Author <a name="author"></a>
-
-
-👤 Maris Kapuka
-   
-
-- GitHub: [riskmaris](https://github.com/riskmaris)
-
-
+👤 **Anshuman Singh Negi **
+    **Maris Kapuka**
+- GitHub: [@githubhandle](https://github.com/riskmaris)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/riskmaris)
+- GitHub: [@githubhandle](https://github.com/anshuman7negi)
+- Twitter: [@twitterhandle](https://twitter.com/AnshumanNegi108)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/anshuman-singh-negi-33779a224/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Add styling
-- Add javascript
+- [ ] **Adding more pages**
+- [ ] **FrontEnd Framework implementation**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please give it a star.
+If you like this project give me a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse and my coding partner with all the resources  and designs they provided.
+I would like to thank Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
-
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed<a name="readme-top"></a>
+
+This project is [MIT](./LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

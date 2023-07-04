@@ -4,11 +4,11 @@
   padding: 0;
   margin: 0;
   font-family: 'Caprasimo', cursive;
-font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 main {
-  display:  flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@ h3 {
   display: none;
   flex-direction: column;
   padding: 4px;
-  border: 2px solid #111111;
+  border: 2px solid #111;
   margin-top: 30px;
   width: 60%;
 }
@@ -47,14 +47,15 @@ h3 {
 button {
   padding: 4px;
   align-self: flex-end;
-  border: 2px solid #111111;
+  border: 2px solid #111;
   background-color: #fff;
-  box-shadow: 4px 3px 1px 0px rgb(23, 22, 22);
+  box-shadow: 4px 3px 1px 0 rgb(23, 22, 22);
   font-size: 15px;
   font-weight: 700;
 }
+
 button:hover {
-  box-shadow: 4px 3px 1px 0px red;
+  box-shadow: 4px 3px 1px 0 red;
 }
 
 .addBook {
@@ -65,8 +66,8 @@ button:hover {
 }
 
 input {
- border: 3px solid black;
- padding: 5px;
+  border: 3px solid black;
+  padding: 5px;
 }
 
 tbody tr td {
@@ -79,6 +80,6 @@ tbody tr td span {
   padding-right: 5px;
 }
 
-tbody tr:nth-child(odd) {  
-  background-color: #DFFF00;  
-}  
+tbody tr:nth-child(odd) {
+  background-color: #dfff00;
+}

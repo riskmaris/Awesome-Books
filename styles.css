@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding-left: 10px;
+}
+
+.book-store {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+button {
+  width: fit-content;
+  padding: 4px;
+}
+
+.addBook {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}

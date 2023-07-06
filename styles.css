@@ -168,7 +168,7 @@ tbody tr:nth-child(odd) {
   padding: 20px;
 }
 
-@media screen and (width< 409px) {
+@media screen and (width < 409px) {
   #newBook::after {
     content: '';
     position: absolute;
@@ -178,11 +178,10 @@ tbody tr:nth-child(odd) {
     height: 2px;
     left: 60px;
     top: 25px;
-}
+  }
 }
 
-@media screen and (min-width:768px) {
-  
+@media screen and (min-width: 768px) {
   header {
     display: flex;
     align-items: center;
@@ -191,7 +190,7 @@ tbody tr:nth-child(odd) {
     border: 4px solid black;
     font-size: 25px;
   }
-  
+
   header p {
     display: block;
   }
@@ -211,6 +210,4 @@ tbody tr:nth-child(odd) {
     width: 500px;
     padding: 10px;
   }
-  
 }
-
